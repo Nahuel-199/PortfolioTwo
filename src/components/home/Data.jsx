@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from 'react';
+import { ThemeContext } from "../../context";
 
 const Data = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="home__data">
-      <h1 className="home__title">
-        Nahuel Cernadas
+      <h2 style={{color: darkMode && "#fff"}} className="home__title">Nahuel Cernadas
         <svg
           width="36"
           height="36"
@@ -54,8 +57,8 @@ const Data = () => {
             fill="#EBA352"
           ></path>
         </svg>
-      </h1>
-      <h3 className="home__subtitle">Software Engineer</h3>
+      </h2>
+      <h3 style={{color: darkMode && "#fff"}} className="home__subtitle">Software Engineer</h3>
       <p className="home__description">
         Soy un desarrollador creativo, siempre estoy queriendo hacer algo
         diferente o mejorar algo que ya hice anteriormente utilizando nuevas

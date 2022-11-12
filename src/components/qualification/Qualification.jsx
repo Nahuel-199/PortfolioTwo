@@ -1,9 +1,12 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "../../context";
 import "./qualification.css";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -11,11 +14,12 @@ const Qualification = () => {
 
   return (
     <section className="qualification section">
-      <h2 className="section__title">Mi experiencia</h2>
+      <h2 style={{color: darkMode && "#fff"}} className="section__title">Mi experiencia</h2>
       <span className="section__subtitle">Mi viaje personal</span>
       <div className="qualification__container container">
         <div className="qualification__tabs">
           <div
+            style={{color: darkMode && "#fff"}}
             className={
               toggleState === 1
                 ? "qualification__button qualification__active button--flex"
@@ -28,6 +32,7 @@ const Qualification = () => {
           </div>
 
           <div
+           style={{color: darkMode && "#fff"}}
             className={
               toggleState === 2
                 ? "qualification__button qualification__active button--flex"
@@ -49,7 +54,7 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Instituto América Latina</h3>
+                <h3 style={{color: darkMode && "#fff"}} className="qualification__title">Instituto América Latina</h3>
                 <span className="qualification__subtitle">
                   Escuela - Instituto
                 </span>
@@ -73,7 +78,7 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">Teclab instituto técnico superior</h3>
+                <h3 style={{color: darkMode && "#fff"}} className="qualification__title">Teclab instituto técnico superior</h3>
                 <span className="qualification__subtitle">
                    Técnico en Programación
                 </span>
@@ -85,7 +90,7 @@ const Qualification = () => {
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Soy Henry</h3>
+                <h3 style={{color: darkMode && "#fff"}} className="qualification__title">Soy Henry</h3>
                 <span className="qualification__subtitle">
                   Bootcamp intensivo de Programación
                 </span>
@@ -110,7 +115,7 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Freelancer</h3>
+                <h3  style={{color: darkMode && "#fff"}} className="qualification__title">Freelancer</h3>
                 <span className="qualification__subtitle">
                   aplicaciónes y paginas web
                 </span>
@@ -134,7 +139,7 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">Wodeva</h3>
+                <h3  style={{color: darkMode && "#fff"}} className="qualification__title">Wodeva</h3>
                 <span className="qualification__subtitle">
                 Backend Developer
                 </span>

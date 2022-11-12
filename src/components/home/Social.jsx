@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from 'react';
+import { ThemeContext } from "../../context";
 
 const Social = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="home__social">
       <a
@@ -9,7 +13,7 @@ const Social = () => {
         target="_blank" 
         rel="noreferrer"
       >
-        <i class="uil uil-instagram"></i>
+        <i style={{color: darkMode && "#fff"}} class="uil uil-instagram"></i>
       </a>
       
       <a
@@ -18,7 +22,7 @@ const Social = () => {
         target="_blank" 
         rel="noreferrer"
       >
-        <i class="uil uil-github-alt"></i>
+        <i style={{color: darkMode && "#fff"}} class="uil uil-github-alt"></i>
       </a>
 
       <a
@@ -27,7 +31,7 @@ const Social = () => {
         target="_blank" 
         rel="noreferrer"
       >
-        <i class="uil uil-linkedin-alt"></i>
+        <i style={{color: darkMode && "#fff"}} class="uil uil-linkedin-alt"></i>
       </a>
     </div>
   );

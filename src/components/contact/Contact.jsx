@@ -1,9 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useRef, useContext } from 'react';
 import emailjs from '@emailjs/browser';
+import { ThemeContext } from "../../context";
 import "./contact.css";
 
 const Contact = () => {
   const form = useRef();
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,12 +23,12 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contacto">
-      <h2 className="section__title">Ponerse en contacto</h2>
+      <h2 style={{color: darkMode && "#fff"}} className="section__title">Ponerse en contacto</h2>
       <span className="section__subtitle">Contáctame</span>
 
       <div className="contact__container container grid">
         <div className="contact_content">
-          <h3 className="contact__title">Háblame</h3>
+          <h3 style={{color: darkMode && "#fff"}} className="contact__title">Háblame</h3>
 
           <div className="contact__info">
             <div className="contact__card">
@@ -82,12 +85,13 @@ const Contact = () => {
         </div>
 
         <div className="contact__content">
-          <h3 className="contact__title">Escríbeme tu proyecto</h3>
+          <h3 style={{color: darkMode && "#fff"}} className="contact__title">Escríbeme tu proyecto</h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
-              <label className="contact__form-tag">Nombre</label>
+              <label style={{backgroundColor: darkMode && "rgb(34 34 34)"}} className="contact__form-tag">Nombre</label>
               <input
+                style={{border: darkMode && " 2px solid rgb(255 255 255 / 79%)"}}
                 type="text"
                 name="name"
                 className="contact__form-input"
@@ -96,8 +100,9 @@ const Contact = () => {
             </div>
 
             <div className="contact__form-div">
-              <label className="contact__form-tag">Email</label>
+              <label style={{backgroundColor: darkMode && "rgb(34 34 34)"}} className="contact__form-tag">Email</label>
               <input
+               style={{border: darkMode && " 2px solid rgb(255 255 255 / 79%)"}}
                 type="email"
                 name="email"
                 className="contact__form-input"
@@ -106,8 +111,9 @@ const Contact = () => {
             </div>
 
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">Proyecto</label>
+              <label style={{backgroundColor: darkMode && "rgb(34 34 34)"}} className="contact__form-tag">Proyecto</label>
               <textarea
+               style={{border: darkMode && " 2px solid rgb(255 255 255 / 79%)"}}
                 name="project"
                 cols="30"
                 rows="10"

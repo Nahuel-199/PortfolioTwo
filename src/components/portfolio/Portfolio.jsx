@@ -1,5 +1,6 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "../../context";
 import Menu from "./Menu";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
@@ -8,10 +9,15 @@ import "swiper/css/pagination";
 import "./portfolio.css";
 
 const Portfolio = () => {
-  const [items,] = useState(Menu);
+  const [items] = useState(Menu);
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <section className="work container section" id="proyectos">
-      <h2 className="section__title">Mis proyectos</h2>
+      <h2 style={{ color: darkMode && "#fff" }} className="section__title">
+        Mis proyectos
+      </h2>
       <span className="section__subtitle">Mi aprendizaje</span>
 
       <Swiper
@@ -34,15 +40,19 @@ const Portfolio = () => {
         modules={[Pagination]}
       >
         {items.map((elem) => {
-          const { id, images, title, description } = elem;
+          const { id, images, title, description, link } = elem;
           return (
             <SwiperSlide className="work__card" key={id}>
-              <img src={images} alt="" className="work__img" />
+              <a href={link} target="_blank" rel="noreferrer">
+                <img src={images} alt="" className="work__img" />
+              </a>
               <h3 className="work__name">{title}</h3>
-                       <p className="work__description">{description}</p>
-              {/*  <a href="#" className="work__button">
-                    <i class='bx bx-link work__button-icon'></i>
-                    </a> */}
+              <p
+                style={{ color: darkMode && "rgb(34, 34, 34)" }}
+                className="work__description"
+              >
+                {description}
+              </p>
             </SwiperSlide>
           );
         })}

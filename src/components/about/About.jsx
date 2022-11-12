@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from "../../context";
 import AboutImg from "../../assets/hacerkam.png";
 import CV from "../../assets/CVACT.pdf";
 import "./about.css";
 import Info from './Info';
 
 const About = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <section className="about section" id="about">
-        <h2 className="section__title">Sobre mí</h2>
+        <h2  style={{color: darkMode && "#fff"}} className="section__title">Sobre mí</h2>
         <span className="section__subtitle">Mi introducción</span>
         <div className="about__container container grid">
            <img src={AboutImg} alt="about" className="about__img" />
