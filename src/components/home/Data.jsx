@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 import { ThemeContext } from "../../context";
 
 const Data = () => {
@@ -7,7 +7,8 @@ const Data = () => {
 
   return (
     <div className="home__data">
-      <h2 style={{color: darkMode && "#fff"}} className="home__title">Nahuel Cernadas
+      <h2 style={{ color: darkMode && "#fff" }} className="home__title">
+        Nahuel Cernadas
         <svg
           width="36"
           height="36"
@@ -58,7 +59,22 @@ const Data = () => {
           ></path>
         </svg>
       </h2>
-      <h3 style={{color: darkMode && "#fff"}} className="home__subtitle">Software Engineer</h3>
+      <div className="home__container-titles">
+        <div className="home_wrapper-title">
+          <h3 style={{ color: darkMode && "#fff" }} className="home__subtitle">
+            Software Engineer
+          </h3>
+          <h3 style={{ color: darkMode && "#fff" }} className="home__subtitle">
+            Frontend Developer
+          </h3>
+          <h3 style={{ color: darkMode && "#fff" }} className="home__subtitle">
+            Backend Developer
+          </h3>
+          <h3 style={{ color: darkMode && "#fff" }} className="home__subtitle">
+            UI/UX Designer
+          </h3>
+        </div>
+      </div>
       <p className="home__description">
         Soy un desarrollador creativo, siempre estoy queriendo hacer algo
         diferente o mejorar algo que ya hice anteriormente utilizando nuevas

@@ -26,3 +26,21 @@
     position: absolute;
     cursor: pointer;
 }
+
+@media screen and (max-width: 992px) {
+    .t{
+       top: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+ .t{
+    top: 60px;
+ }   
+}
+
+@media screen and (max-width: 350px) {
+    .t{
+       top: 23px;
+    }   
+   }
