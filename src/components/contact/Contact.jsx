@@ -35,7 +35,7 @@ const Contact = () => {
               <i className="bx bx-mail-send contact__card-icon"></i>
 
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">
+              <span style={{color: darkMode && "rgb(34, 34, 34)"}} className="contact__card-data">
                 gabrielnahuel96@gmail.com
               </span>
 
@@ -54,7 +54,7 @@ const Contact = () => {
               <i className="bx bxl-whatsapp contact__card-icon"></i>
 
               <h3 className="contact__card-title">Whatsapp</h3>
-              <span className="contact__card-data">112335-9620</span>
+              <span style={{color: darkMode && "rgb(34, 34, 34)"}} className="contact__card-data">112335-9620</span>
 
               <a href="https://walink.co/332257" 
               target="_blank" 
@@ -70,7 +70,7 @@ const Contact = () => {
               <i className="bx bxl-discord-alt contact__card-icon"></i>
 
               <h3 className="contact__card-title">Discord</h3>
-              <span className="contact__card-data">Nahue25</span>
+              <span style={{color: darkMode && "rgb(34, 34, 34)"}} className="contact__card-data">Nahue25</span>
 
               <a href="https://discord.com/"  
               target="_blank" 
