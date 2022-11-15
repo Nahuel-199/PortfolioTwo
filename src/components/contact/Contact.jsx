@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact section" id="contacto">
+    <section className="contact section" id="contact">
       <h2 style={{color: darkMode && "#fff"}} className="section__title">Ponerse en contacto</h2>
       <span className="section__subtitle">Contáctame</span>
 
@@ -96,6 +96,7 @@ const Contact = () => {
                 name="name"
                 className="contact__form-input"
                 placeholder="Ponga su nombre"
+                required
               />
             </div>
 
@@ -107,6 +108,7 @@ const Contact = () => {
                 name="email"
                 className="contact__form-input"
                 placeholder="Ponga su email"
+                required
               />
             </div>
 
@@ -119,6 +121,7 @@ const Contact = () => {
                 rows="10"
                 className="contact__form-input"
                 placeholder="Ponga su projecto"
+                required
               ></textarea>
             </div>
 
