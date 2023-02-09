@@ -12,28 +12,30 @@ import pr10 from "../../assets/projects/pr11.jpeg";
 import pr11 from "../../assets/projects/pr12.jpeg";
 import pr12 from "../../assets/projects/pr13.jpeg";
 import pr13 from "../../assets/projects/pr14.jpeg";
+import landing from "../../assets/projects/fit.jpg";
+import aoe from "../../assets/projects/oe.jpg";
 
 const Menu = [
     {
-        id: 2,
-        images: pr6,
-        title: "PizzasApp",
-        description: "Tienda de comida, tematica de pizzas, realizada con Next Js, React y modulos de CSS para el frontend, cuenta tambien con una base de datos en MongoDB, carrito, ordenes de compra, metodo de pago y tambien una interfas admin",
-        link: "https://www.linkedin.com/posts/nahuel-cernadas-3b111a1b7_frontend-developments-react-activity-6904171828021932032-lZC_?utm_source=share&utm_medium=member_desktop"
+        id: 1,
+        images: aoe,
+        title: "AOE Tienda Virtual",
+        description: "Tienda Virtual, Eccomerce, desarrollada en React, Redux, Material-UI, CSS, JavaScript, MongoDB y Nodejs, cuenta con usuarios, filtros en los productos, ordenes de compra y pasarela de pago con Mercado Pago.",
+        link: "https://aoe-eccomerce-production.up.railway.app/"
     },
     {
-        id: 1,
-        images: pr7,
-        title: "Tienda de Hamburguesas",
-        description: "Tienda de comida, tematica de hamburguesas, realizada con Next Js, React y modulos de CSS para el frontend, cuenta tambien con una base de datos en MongoDB, carrito, ordenes de compra y tambien una interfas admin",
-        link: "https://www.linkedin.com/feed/update/urn:li:activity:6906021900103798784/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6906021900103798784%29"
+        id: 2,
+        images: landing,
+        title: "Landing Page Gym",
+        description: "Landing Page, realizada en React, CSS y Javascript, totalmente responsive, es de una sola sección.",
+        link: "https://landing1-wheat.vercel.app/"
     },
     {
         id: 3,
-        images: pr2,
-        title: "Game Zone",
-        description: "Single Page Application con la temática de videogames utilizando las tecnologías de React, Redux, CSS para realizar el Front, cuenta con un Backend hecho en node Js y una base de datos en PostgreSQL",
-        link: "https://www.linkedin.com/feed/update/urn:li:activity:6869337057299349504/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6869337057299349504%29" 
+        images: pr8,
+        title: "Subli Fox2",
+        description: "Eccomerce de ropa, realizada con Next Js, React, LocaleStorage Y Bootstrap, para el frontend y MongoDB, Node Js, JWT y Express para el backend, cuenta con filtros por talles, categorias, ascendente y descende en precio",
+        link: "https://next-fox.vercel.app/?search=all"
     },
     {
         id: 4,
@@ -72,10 +74,10 @@ const Menu = [
     },
     {
         id: 9,
-        images: pr8,
-        title: "Subli Fox2",
-        description: "Eccomerce de ropa, realizada con Next Js, React, LocaleStorage Y Bootstrap, para el frontend y MongoDB, Node Js, JWT y Express para el backend, cuenta con filtros por talles, categorias, ascendente y descende en precio",
-        link: "https://next-fox.vercel.app/?search=all"
+        images: pr2,
+        title: "Game Zone",
+        description: "Single Page Application con la temática de videogames utilizando las tecnologías de React, Redux, CSS para realizar el Front, cuenta con un Backend hecho en node Js y una base de datos en PostgreSQL",
+        link: "https://www.linkedin.com/feed/update/urn:li:activity:6869337057299349504/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6869337057299349504%29" 
     },
     {
         id: 14,
@@ -111,6 +113,20 @@ const Menu = [
         title: "Mi portfolio",
         description: "Este es mi portfolio actualmente, aca es donde hago mi recorrido de aprendizaje y mis proyectos, donde tambien cuanto un poco sobre mi y detallo mis habilidades tecnicas",
         link: "https://portfolio-two-eight.vercel.app/"
+    },
+    {
+        id: 14,
+        images: pr6,
+        title: "PizzasApp",
+        description: "Tienda de comida, tematica de pizzas, realizada con Next Js, React y modulos de CSS para el frontend, cuenta tambien con una base de datos en MongoDB, carrito, ordenes de compra, metodo de pago y tambien una interfas admin",
+        link: "https://www.linkedin.com/posts/nahuel-cernadas-3b111a1b7_frontend-developments-react-activity-6904171828021932032-lZC_?utm_source=share&utm_medium=member_desktop"
+    },
+    {
+        id: 15,
+        images: pr7,
+        title: "Tienda de Hamburguesas",
+        description: "Tienda de comida, tematica de hamburguesas, realizada con Next Js, React y modulos de CSS para el frontend, cuenta tambien con una base de datos en MongoDB, carrito, ordenes de compra y tambien una interfas admin",
+        link: "https://www.linkedin.com/feed/update/urn:li:activity:6906021900103798784/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6906021900103798784%29"
     },
 ]
 
