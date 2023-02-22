@@ -82,7 +82,7 @@ const Header = () => {
                 : "nav__link"
               }>
                 <i className="uil uil-message nav__icon"></i>
-                Contancto
+                Contacto
               </a>
             </li>
           </ul>
