@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from "../../context";
 import AboutImg from "../../assets/hacerkam.png";
-import CV from "../../assets/CVACT.pdf";
+import CV from "../../assets/Nahuel_Cernadas.pdf";
 import "./about.css";
 import Info from './Info';
 
@@ -19,7 +19,7 @@ const About = () => {
                <Info />
                <p className="about__description">
                 Desarrollador frontend y backend, creo páginas web con interfaz de usuario UI/UX,
-                Tengo años de experiencia y muchos clientes están contentos con el
+                Tengo años de experiencia y muchos clientes están contentos con los
                 proyectos realizados.
                </p>
                <a download="" href={CV} className="button button--flex">

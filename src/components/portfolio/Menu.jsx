@@ -13,7 +13,9 @@ import pr11 from "../../assets/projects/pr12.jpeg";
 import pr12 from "../../assets/projects/pr13.jpeg";
 import pr13 from "../../assets/projects/pr14.jpeg";
 import landing from "../../assets/projects/fit.jpg";
-import aoe from "../../assets/projects/oe.jpg";
+import aoe from "../../assets/projects/pr15.jpg";
+import dash from "../../assets/projects/dashboard.png";
+import digital from "../../assets/projects/digitalagency.png";
 
 const Menu = [
     {
@@ -21,7 +23,7 @@ const Menu = [
         images: aoe,
         title: "AOE Tienda Virtual",
         description: "Tienda Virtual, Eccomerce, desarrollada en React, Redux, Material-UI, CSS, JavaScript, MongoDB y Nodejs, cuenta con usuarios, filtros en los productos, ordenes de compra y pasarela de pago con Mercado Pago.",
-        link: "https://aoe-eccomerce-production.up.railway.app/"
+        link: "https://aoe-tienda.com/"
     },
     {
         id: 2,
@@ -39,38 +41,38 @@ const Menu = [
     },
     {
         id: 4,
-        images: pr3,
-        title: "The Food World",
-        description: "Single Page Application con la temática de comidas utilizando las tecnologías de React, Redux, CSS para realizar el Front, cuenta con un Backend hecho en node Js y una base de datos en PostgreSQL",
-        link: "https://www.linkedin.com/feed/update/urn:li:activity:6871060785129426944/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6871060785129426944%29"
+        images: pr1,
+        title: "MovieApp",
+        description: "MovieApp buscador de pelis y series, empieza con todas las tendencias que hay en el momento, tiene filtros por categorias, información sobre los actores o personajes y enlances a los adelantos de cada serie o peli ",
+        link: "https://the-movies-app-three.vercel.app/"
     },
     {
         id: 5,
+        images: digital,
+        title: "DigitalAgency",
+        description: "Landing Page para agencia de Marketing, realizada con React, Javascript, CSS. Cuenta con el dark mode realizado con el contexto de Reactjs.",
+        link: "https://digital-agency-kappa.vercel.app/"
+    },
+    {
+        id: 6,
+        images: dash,
+        title: "Dashboard",
+        description: "Dashboard realizada en React, Javascript, Sass, incluyendo dark mode gracias al contexto de react, solamente se puede visualizar en escritorio.",
+        link: "https://dashboard-liart-eight.vercel.app/"
+    },
+    {
+        id: 7,
         images: pr4,
         title: "Mi portfolio",
         description: "Este fue el primer portfolio que realice, echo con React, cuenta con una modalidad blanco y negro, totalmente responsive, tambien se utilizo SASS(Lenguaje de hoja de estilos en cascada)",
         link: "https://portfolio-six-black-41.vercel.app/"
     },
     {
-        id: 6,
+        id: 8,
         images: pr5,
         title: "SubliFox",
         description: "Eccomerce de ropa, realizada con React, Redux, Styled-Components y Material-UI para el frontend y MongoDB, Node Js y Express para el backend, cuenta con filtros por color, talles, ascendente y descende en precio",
         link: "https://www.linkedin.com/feed/update/urn:li:activity:6900168711534108672/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6900168711534108672%29"
-    },
-    {
-        id: 7,
-        images: pr0,
-        title: "Weather app",
-        description: "App para buscar climas en diferentes regiones, con diferentes estilos de imagenes para cada clima, realizada con React y mostrando los datos de la api OpenWeatherMap",
-        link: "https://weatherapp-bay-sigma.vercel.app/"
-    },
-    {
-        id: 8,
-        images: pr1,
-        title: "MovieApp",
-        description: "MovieApp buscador de pelis y series, empieza con todas las tendencias que hay en el momento, tiene filtros por categorias, información sobre los actores o personajes y enlances a los adelantos de cada serie o peli ",
-        link: "https://the-movies-app-three.vercel.app/"
     },
     {
         id: 9,
@@ -128,6 +130,21 @@ const Menu = [
         description: "Tienda de comida, tematica de hamburguesas, realizada con Next Js, React y modulos de CSS para el frontend, cuenta tambien con una base de datos en MongoDB, carrito, ordenes de compra y tambien una interfas admin",
         link: "https://www.linkedin.com/feed/update/urn:li:activity:6906021900103798784/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6906021900103798784%29"
     },
+    {
+        id: 16,
+        images: pr3,
+        title: "The Food World",
+        description: "Single Page Application con la temática de comidas utilizando las tecnologías de React, Redux, CSS para realizar el Front, cuenta con un Backend hecho en node Js y una base de datos en PostgreSQL",
+        link: "https://www.linkedin.com/feed/update/urn:li:activity:6871060785129426944/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6871060785129426944%29"
+    },
+    {
+        id: 17,
+        images: pr0,
+        title: "Weather app",
+        description: "App para buscar climas en diferentes regiones, con diferentes estilos de imagenes para cada clima, realizada con React y mostrando los datos de la api OpenWeatherMap",
+        link: "https://weatherapp-bay-sigma.vercel.app/"
+    },
+ 
 ]
 
 export default Menu
